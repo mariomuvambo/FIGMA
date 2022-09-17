@@ -1,0 +1,128 @@
+.filtro{
+    position: absolute;
+width: 214px;
+height: 29px;
+left: 107px;
+top: 268px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+letter-spacing: -0.015em;
+
+color: #5A5651;
+}
+
+.todas{
+position: absolute;
+left: 3.56%;
+right: 81.94%;
+top: 100.0%;
+bottom: 10.34%;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+letter-spacing: -0.015em;
+
+color: #363636;
+}
+
+.africa{
+position: absolute;
+left: 27.63%;
+right: 58.14%;
+top: 100%;
+bottom: 10.34%;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+letter-spacing: -0.015em;
+color: rgba(54, 54, 54, 0.8);
+
+}
+
+
+
+.todas, .america{
+    position: absolute;
+left: 51.71%;
+right: 70.78%;
+top: 100%;
+bottom: 10.34%;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+letter-spacing: -0.015em;
+
+color: rgba(54, 54, 54, 0.8);
+}
+
+.asia{
+    position: absolute;
+left: 82.07%;
+right: 7.53%;
+top: 100%;
+bottom: 10.34%;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+letter-spacing: -0.015em;
+
+color: rgba(54, 54, 54, 0.8);
+}
+
+.europa{
+    position: absolute;
+left: 29.86%;
+right: 65.62%;
+top: 100%;
+bottom: 67.13%;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: -0.015em;
+
+color: rgba(54, 54, 54, 0.8);
+}
+
+.oceania{
+    position: absolute;
+left: 36.25%;
+right: 60px;
+top: 100%;
+bottom: 66.94%;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: -0.015em;
+
+color: rgba(54, 54, 54, 0.8);
+}
