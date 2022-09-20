@@ -3,24 +3,30 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SearchBarComponent } from './search-bar/search-bar.component';
-import { FilterComponent } from './filter/filter.component';
-import { CountryComponent } from './country/country.component';
-import { FooterComponent } from './footer/footer.component';
 
+import { footerComponent } from './components/footer/footer.component';
+import { searchBarComponent } from './components/searchBar/searchBar.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FiltroComponent } from './components/filtro/filtro.component';
+import { CardsComponent } from './components/cards/cards.component';
+import {HttpClientModule} from '@angular/common/http'
 @NgModule({
   declarations: [
     AppComponent,
-    SearchBarComponent,
-    FilterComponent,
-    CountryComponent,
-    FooterComponent
+    footerComponent,
+    searchBarComponent,
+    FiltroComponent,
+    CardsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  
+}

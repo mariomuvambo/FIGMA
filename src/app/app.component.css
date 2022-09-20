@@ -1,32 +1,23 @@
-app-seach-bar{
-    width: 95%;
-  }
-  @media only screen and (min-width: 540px) {
-    app-seach-bar{
-      width: auto;
-    }
-    
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.cards {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 80px 20px;
+  justify-content: center;
+  margin-bottom: 50px;
+} 
+app-cards{
+  width: 95%;
+}
+@media only screen and (min-width: 540px) {
+  app-cards{
+    width: auto;
   }
 
-  app-footer{
-    width: 95%;
-  }
-  @media only screen and (min-width: 540px) {
-    app-footer{
-      width: auto;
-    }
-    
-  }
+}
 
-  app-country{
-    width: 95%;
-  }
-  @media only screen and (min-width: 540px) {
-    app-country{
-      width: auto;
-    }
-    
-  }
-
-
-  

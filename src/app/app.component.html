@@ -1,3 +1,8 @@
-<app-search-bar></app-search-bar>
-<app-filter></app-filter>
+
+<app-searchBar></app-searchBar>
+<app-filtro></app-filtro>
+<div class="cards">
+<app-cards *ngFor="let i of todosPaises" [test]="i" ></app-cards>
+</div>
 <app-footer></app-footer>
+

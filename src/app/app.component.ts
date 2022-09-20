@@ -1,36 +1,31 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-// import { HttpClient } from '@angular/common/http';
-// import { country } from 'src/app/services/api';
-// import { map } from 'rxjs/operators';
+import { map } from 'rxjs/operators';
+import { Pais } from 'src/app/services/Pais';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'trabalho';
+  teste = 'Esse e um teste de partilhar';
+  url_paises: string = 'https://restcountries.com/v3.1/all';
 
-  // url_paises: string = 'https://restcountries.com/v3.1/all';
+  todosPaises: Pais[] = [];
 
-  // todos: country[] = [];
+  constructor(private http: HttpClient) {
+    this.getPaises();
+    console.log(this.todosPaises)
+  }
 
-  // get_Paises(){
-  //   this.http.get(this.url_paises).subscribe((lista: any) => {
-  //     // lista.forEach(() => {
-  //     //   let pais = new country (lista.name.common,lista.regiao[0],lista.coatOfArms.png);
-  //     //   this.todos.push(country);
-  //     // });
-  //   });
-  // }
+  getPaises() {
+    this.http.get(this.url_paises).subscribe((lista: any) => {
+      lista.forEach((lista) => {
 
-  // constructor(private http: HttpClient) {
-  //   this.get_Paises();
-  //   console.log(this.todos)
-  // }
-
-
-
-
-
+        let pais = new Pais(lista.name.common,lista.continents[0],lista.coatOfArms.png);
+        this.todosPaises.push(pais);
+      });
+    });
+  }
 }
